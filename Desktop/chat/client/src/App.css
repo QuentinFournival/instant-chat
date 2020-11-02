@@ -1,0 +1,178 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  width:430px;
+  height: 700px;
+  padding: 60px 35px 35px 35px;
+  border-radius: 10px;
+  background: radial-gradient(circle, #555555, #535353, #505050, #4e4e4e, #4c4c4c);
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  filter: blur(0.4px);
+  box-shadow:
+  0px 20px 20px rgba(0,0,0,0.2),
+  0px 5px 10px rgba(0,0,0,0.2),
+  0px 70px 50px rgba(0,0,0,0.4),
+  30px 50px 50px rgba(0,0,0,0.2),
+  -30px 50px 50px rgba(0,0,0,0.2),
+  inset 20px 0px 60px rgba(0,0,0,0.1),
+  inset -20px 0px 60px rgba(0,0,0,0.1);
+}
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  transform: translate(-50%);
+  background-image:url("clipart2261764.png");
+  width:150px;
+  height:150px;
+  border-radius: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+input {
+
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  padding: 10px 10px 10px 5px;
+  width: 70%;
+  height: 50px;
+}
+
+.username, .roomname {
+  display: block;
+  border-bottom: 1px solid #b3b3b3;
+  margin-bottom: 30px;
+}
+.username{
+  margin-top: 350px;
+}
+
+::placeholder  { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 1; /* Firefox */
+  color: grey;
+  font-size: 20px;
+  font-weight: 300;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: grey;
+  font-size: 20px;
+  font-weight: 300;
+}
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  font-size: 22px;
+  font-family: 'Lato', sans-serif;
+  color:white;
+  text-align: center;
+  letter-spacing: 1px;
+  background: radial-gradient(circle, #24cfaa, #26c5a3, #28bb9c, #29b294, #2aa88d);
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+button:hover {
+  background: radial-gradient(circle, #2fdbb6, #32d6b3, #32c9a8, #36c7a7, #38bb9f);
+}
+button:active {
+  background: radial-gradient(circle, #1da88a, #1ea084, #229c82, #23947b, #238d76);
+}
+
+.chatContainer{
+  width:430px;
+  height: 700px;
+  padding: 60px 35px 35px 35px;
+  border-radius: 10px;
+  background: radial-gradient(circle, #555555, #535353, #505050, #4e4e4e, #4c4c4c);
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.chatContainer .messages{
+  flex: 90%;
+  height: 90%;
+  width: 100%;
+}
+
+.chatContainer .messageInputs{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.chatContainer .messageInputs input{
+flex: 80%;
+width: 80%;
+height: calc(100% -5px);
+border: none;
+font-size: 16px;
+background-color: #fff;
+margin-right: 20px;
+border-radius: 10px;
+padding-left: 20px;
+color: black;
+}
+.chatContainer .messageInputs button{
+flex: 23%;
+width: 23%;
+height: 70%;
+font-size: 16px;
+}
+.messageContainer{
+  display: flex;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+  align-items: center;
+
+}
+.messageContainer h1{
+  font-size: 16px;
+
+}
+#You {
+  justify-content: flex-end;
+}
+#You .messageIndividuel{
+  background-color:#2fdbb6 !important;
+ 
+}
+#Other{
+  justify-content: flex-start;
+}
+.messageIndividuel{
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background-color: #0091ff;
+  color: white;
+  margin: 20px;
+}
